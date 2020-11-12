@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 //create home route
 app.get('/', function(req, res) {
-    res.send("Home route");
+    res.json({message: "Hello"});
 });
 
 
