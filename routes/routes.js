@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-//var db = require("../models");
+var db = require("../models");
 
 
 router.get('/event', function(req, res){
@@ -8,7 +8,13 @@ router.get('/event', function(req, res){
 });
 
 router.post('/subscribe/topic', function(req, res){
-    res.send("Hello from subscruber home");
+    db.EventTopic.create(req.body)
+    .then(function(newTopic) {
+        res.json(newTopic);
+    })
+    .catch(function(error) {
+        res.send(error);
+    });
 });
 
 

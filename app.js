@@ -12,7 +12,7 @@ app.get('/', function(req, res) {
     res.send("Hello from home route");
 });
 
-app.use(eventRoutes);
+app.use('/', eventRoutes);
 
 
 //create node js server
