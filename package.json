@@ -1,16 +1,26 @@
 {
   "name": "eventapi",
   "version": "1.0.0",
-  "description": "Creating event subscription API",
-  "main": "app.js",
+  "description": "Event API",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emmy-github-webdev/eventAPI.git"
+  },
   "author": "Emmanuel Oga",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emmy-github-webdev/eventAPI/issues"
+  },
+  "homepage": "https://github.com/Emmy-github-webdev/eventAPI#readme",
   "dependencies": {
+    "axios": "^0.21.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mongoose": "^5.10.13"
+    "mongoose": "^5.10.14",
+    "request": "^2.88.2"
   }
 }
